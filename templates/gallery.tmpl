@@ -1,0 +1,18 @@
+<html>
+{#  Просмотр всех фотографий (уменьшенных копий). Страница вывода на экран – это twig-шаблон #}
+  <head>
+  <title>Моя галерея</title>
+</head>
+  <body>
+  <h2>Моя галерея!</h2>
+  
+  <p>Hello</p>
+  
+    
+ {% for file in files %}
+    <a href="fullimage.php?img=big/{{file}}"><img src="small/{{file}}" alt=""></a>
+  {% endfor %}
+  
+ 
+  </body>
+</html>
